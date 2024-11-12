@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kedarr Durugade | Data Analyst Portfolio</title>
+  <link rel="icon" href="images/profile.png" type="images/profile.png">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Header with Dark Background -->
+  <header>
+    <nav>
+      <div class="logo">Kedarr Durugade</div>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span> </span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about" onclick="navigateToSection('about')">About</a></li>
+        <li><a href="#skills" onclick="navigateToSection('skills')">Skills</a></li>
+        <li><a href="#projects" onclick="navigateToSection('projects')">Projects</a></li>
+        <li><a href="#experience" onclick="navigateToSection('experience')">Experience</a></li>
+        <li><a href="#education" onclick="navigateToSection('education')">Education</a></li>
+        <li><a href="#contact" onclick="navigateToSection('contact')">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" data-aos="fade-up">
+    <div class="hero-content">
+      <img src="/images/profile.png" alt="Profile" class="profile-image" onclick="openModal('/images/profile.png', 'Kedar Durugade - Data Analyst')">
+      <h1>Hello, I'm Kedarr Durugade</h1>
+      <p>Data Analyst | Tableau & Power BI Specialist</p>
+      <a href="resume new.pdf" class="resume-btn" download>Download Resume</a>
+      <a href="mailto:kdurugade1005@gmail.com" target="_blank" class="social-btn book-btn">Book Appoitment</a>
+
+
+       <!-- Social Media Buttons -->
+    <div class="social-buttons">
+      <a href="https://www.linkedin.com/in/kedar-durugade" target="_blank" class="social-btn linkedin-btn">LinkedIn</a>
+      <a href="https://github.com/kedar1005" target="_blank" class="social-btn github-btn">GitHub</a>
+
+    </div>
+    </div>
+  </section>
+
+  <!-- Main Content Wrapper -->
+  <main>
+    <!-- About Section -->
+    <section id="about" class="content-card"  data-aos="fade-up">
+      <h2>About Me</h2>
+      <p>Bachelor of Computer Science - Swami Vivekanand College</p>
+
+      <p>Enthusiastic about data analytics and passionate about uncovering insights. Skilled in Python, Power BI, and SQL, eager to grow in data analytics.</p>
+     
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="content-card"  data-aos="fade-right" data-aos-delay="200" data-aos-duration="1500">
+      <h2>Skills</h2>
+      <div class="skills-container">
+        <div class="skill">Python</div>
+        <div class="skill">Power BI</div>
+        <div class="skill">Tableau </div>
+        <div class="skill">ETL</div>
+        <div class="skill">SQL</div>
+        <div class="skill">Analytical Thinking</div>
+        <div class="skill">Problem-Solving </div>
+        <div class="skill">Active Listening </div>
+        <div class="skill">MS-Office</div>
+        <div class="skill">Data Modeling</div>
+        <div class="skill">Data Analysis</div>
+
+        <div class="skill">Data Visualization</div>
+        
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <!-- Projects Section -->
+<section id="projects" class="content-card" data-aos="zoom-in">
+  <h2>Projects</h2>
+  <div class="projects-grid">
+    <!-- Project Card with Modal Trigger -->
+    <div class="project-card" data-aos="fade-up" onclick="openProjectModal('/images/ipl Dashboard.png', 'IPL Analysis Dashboard', 'https://github.com/kedar-ipl-project', 'ipl_dashboard.pdf')">
+      <img src="/images/ipl Dashboard.png" alt="IPL Dashboard">
+      <h3>IPL Analysis Dashboard</h3>
+      <p>Interactive Power BI dashboard analyzing team and player performance.</p>
+    </div>
+  
+
+
+        <div class="project-card" data-aos="fade-up" onclick="openProjectModal('/images/Sales analysis.png', 'Sales Analysis Dashboard', 'https://github.com/kedar-sales-project', 'sales_dashboard.pdf')">
+          <img src="/images/Sales analysis.png" alt="Sales Dashboard">
+          <h3>Sales Analysis Dashboard</h3>
+          <p>SQL-based dashboard providing insights into sales performance.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="content-card" data-aos="fade-left">
+      <h2>Experience</h2>
+      <div class="experience-item">
+        <h3>Data Analyst Intern - Cognifyz Technologies</h3>
+        <p>Developed interactive dashboards and performed trend analysis for investment insights.</p>
+        <p> Conducted data exploration and summary tasks, including data import and exploratory
+          analysis, computing key statistics such as average age, investment preferences, and savings
+          objectives. </p>
+        <p>Analyzed gender-based differences in investment preferences, creating comparative
+          visualizations and deriving insights on trends in equity, mutual funds, and government
+          bonds.</p>
+        <p>Explored investment duration distribution and frequency, analyzing their impact on
+          investment preferences and monitoring.</p>
+        <p>  Identified trends in investment reasons (e.g., returns, tax benefits) and sources of
+          information, visualizing data to understand common sources like newspapers and the
+          internet.</p>
+        <p>  Designed an interactive, user-friendly Power BI dashboard incorporating all analyses,
+          visualizations, and key insights.</p>
+        <p>  Utilized Power BI's advanced features to create professional, insightful reports with
+          interactive elements for deep data exploration</p>
+      
+      </div>
+    </section>
+
+    <!-- Education Section with Certificates -->
+    <section id="education" class="content-card"  data-aos="flip-up">
+      <h2>Certifications</h2>
+      <div class="certificates-grid">
+        <div class="certificate-card" data-aos="zoom-in" onclick="openModal('images/nptel.jpeg', 'NPTEL Python for Data Science Certificate')">
+          <img src="images/nptel.jpeg" alt="NPTEL Certificate">
+        </div>
+        <div class="certificate-card" data-aos="zoom-in" onclick="openModal('images/Data analitics.png', 'Accenture Data Analytics Certificate')">
+          <img src="images/Data analitics.png" alt="Accenture Data Analytics Certificate">
+        </div>
+        <div class="certificate-card" data-aos="zoom-in"  onclick="openModal('images/Cloud Foundations.jpg', 'Cloud Foundations Certificate')">
+          <img src="images/Cloud Foundations.jpg" alt="Cloud Foundations Certificate">
+        </div>
+        <div class="certificate-card" data-aos="zoom-in" onclick="openModal('images/uiux.jpg', 'UI/UX Certificate ')">
+          <img src="images/uiux.jpg" alt="UI/UX Certificate">
+        </div>
+        <div class="certificate-card"  data-aos="zoom-in" onclick="openModal('images/lor.jpeg', 'Internship Certificate ')">
+          <img src="images/lor.jpeg" alt="Internship Certificate">
+        </div>
+        <div class="certificate-card" data-aos="zoom-in" onclick="openModal('images/Mca cet.jpeg', 'MH-MCA CET RESULT 2024 ')">
+          <img src="images/Mca cet.jpeg" alt="Internship Certificate">
+        </div>
+        <div class="certificate-card"data-aos="zoom-in"  onclick="openModal('images/Developer.png', 'Accenture Developer Certificate ')">
+          <img src="images/Developer.png" alt="Accenture Developer Certificate">
+        </div>
+      </div>
+    </section>
+
+   <!-- Contact Section -->
+<section id="contact" class="content-card contact-section"data-aos="fade-up">
+  <h2>Contact Me</h2>
+  <p>If you have any questions or would like to connect, feel free to reach out via email or use the form below!</p>
+  
+  <div class="contact-info">
+    <p><strong>Email:</strong> <a href="mailto:kdurugade1005@gmail.com">kdurugade1005@gmail.com</a></p>
+  </div>
+
+  <form id="contact-form" class="contact-form">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Your Name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Your Email" required>
+    </div>
+    <div class="form-group">
+      <label for="message">Message</label>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+    </div>
+    <button type="submit" class="submit-btn">Send Message</button>
+  </form>
+</section>
+
+  </main>
+
+  <!-- Modal for Enlarged Images -->
+  <div id="modal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modal-image">
+    <div id="modal-caption"></div>
+    <div id="modal-buttons">
+      <a href="#" id="github-link" target="_blank" class="modal-btn">View on GitHub</a>
+      <a href="#" id="download-link" download class="modal-btn">Download File</a>
+    </div>
+  </div>
+  <!-- Footer Section -->
+<footer>
+  <p>&copy; 2024 Kedarr Durugade. All rights reserved.</p>
+  <p>Developed by Kedarr Durugade</p>
+</footer>
+
+</body>
+</html>
